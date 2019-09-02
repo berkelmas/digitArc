@@ -1,0 +1,139 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tecno HTML Template | Homepage Three</title>
+<!-- Stylesheets -->
+<link href="{% static 'mainapp/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'mainapp/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'mainapp/css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'mainapp/images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'mainapp/images/favicon.png' %}" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="{% static 'mainapp/' %}https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'mainapp/' %}js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Three -->
+    <header class="main-header header-style-three">
+    	
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="index.html"><img style="height: 50px;" src="{% static 'mainapp/images/digitarc-logo-saydam.png' %}" alt="" title=""></a></div>
+                    </div>
+                   	
+                   	<div class="nav-outer clearfix">
+                    
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="current dropdown"><a href="#banner">Home</a>
+										<ul>
+											<li><a href="index.html">Home Page 01</a></li>
+											<li><a href="index-2.html">Home Page 02</a></li>
+											<li><a href="index-3.html">Home Page 03</a></li>
+										</ul>
+									</li>
+									<li><a href="#about-us">About Us</a></li>
+									<li><a href="#services">Services</a></li>
+									<li class="dropdown"><a href="#portfolio">Portfolio</a>
+										<ul>
+											<li><a href="portfolio.html">Portfolio</a></li>
+											<li><a href="portfolio-single.html">Portfolio Single</a></li>
+										</ul>
+									</li>
+									<li><a href="#teams">Our Team</a></li>
+									<li class="dropdown"><a href="#news">Blog</a>
+										<ul>
+											<li><a href="blog.html">Our Blog</a></li>
+											<li><a href="blog-classic.html">Blog Classic</a></li>
+											<li><a href="blog-single.html">Blog Single</a></li>
+										</ul>
+									</li>
+									<li><a href="#contact">Contact us</a></li>
+								</ul>
+							</div>
+							
+						</nav>
+						
+						<div class="outer-box">
+							<!--Nav Toggler-->
+							<div class="nav-toggler"><div class="nav-btn"><span class="flaticon-menu"></span></div></div>
+							
+							<!-- Language List -->
+							<ul class="language-list">
+								<li><a href="#">Eng</a></li>
+								<li><a href="#">Arb</a></li>
+							</ul>
+						</div>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+		<!-- Quik search -->
+		<div class="dez-quik-search">
+			<form action="#">
+				<input name="search" value="" type="text" class="form-control" placeholder="Type to search" required>
+				<span id="quik-search-remove"><i class="fa fa-remove"></i></span>
+				<button class="theme-btn submit-btn" type="submit" name="submit-form">Send Now</button>
+			</form>
+		</div>
+		
+    </header>
+    <!--End Main Header -->
+
+    {% block body %}
+
+    {% endblock %}
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="{% static 'mainapp/' %}js/jquery.js"></script>
+<script src="{% static 'mainapp/' %}js/popper.min.js"></script>
+<script src="{% static 'mainapp/' %}js/pagenav.js"></script>
+<script src="{% static 'mainapp/' %}js/jquery.scrollTo.js"></script>
+<script src="{% static 'mainapp/' %}js/bootstrap.min.js"></script>
+<script src="{% static 'mainapp/' %}js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{% static 'mainapp/' %}js/jquery.fancybox.js"></script>
+<script src="{% static 'mainapp/' %}js/appear.js"></script>
+<script src="{% static 'mainapp/' %}js/owl.js"></script>
+<script src="{% static 'mainapp/' %}js/wow.js"></script>
+<script src="{% static 'mainapp/' %}js/jquery-ui.js"></script>
+<script src="{% static 'mainapp/' %}js/script.js"></script>
+
+</body>
+</html>
